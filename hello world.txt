@@ -1,0 +1,17 @@
+public class AES {
+    public static void main(String[] args) {
+        String str = "Hello World";
+        int len = str.length();
+        System.out.println("And Operation");
+        for(int i=0;i<len;i++)
+            System.out.print((str.charAt(i)&127) +" ");
+
+        System.out.println("\nXOR Operation");
+        for(int i=0;i<len;i++)
+            System.out.print((str.charAt(i)^127) +" ");
+
+        System.out.println("\nNOT Operation");
+        for(int i=0;i<len;i++)
+            System.out.print((str.charAt(i)|127) +" ");
+    }
+}
